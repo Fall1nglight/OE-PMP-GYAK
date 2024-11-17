@@ -201,89 +201,89 @@ internal class Program
 
         #region 11. feladat
 
-        // Console.Clear();
-        // Console.WriteLine("11. feladat");
-        //
-        // Console.Write("Adj meg egy számot: ");
-        // int inputNumber = int.Parse(Console.ReadLine()!);
-        // string numToText = string.Empty;
-        //
-        // switch (inputNumber)
-        // {
-        //     case 0:
-        //     {
-        //         numToText = "nulla";
-        //         break;
-        //     }
-        //
-        //     case 1:
-        //     {
-        //         numToText = "egy";
-        //         break;
-        //     }
-        //
-        //     case 2:
-        //     {
-        //         numToText = "kettő";
-        //         break;
-        //     }
-        //
-        //     case 3:
-        //     {
-        //         numToText = "három";
-        //         break;
-        //     }
-        //
-        //     case 4:
-        //     {
-        //         numToText = "négy";
-        //         break;
-        //     }
-        //
-        //     case 5:
-        //     {
-        //         numToText = "öt";
-        //         break;
-        //     }
-        //
-        //     case 6:
-        //     {
-        //         numToText = "hat";
-        //         break;
-        //     }
-        //
-        //     case 7:
-        //     {
-        //         numToText = "hét";
-        //         break;
-        //     }
-        //
-        //     case 8:
-        //     {
-        //         numToText = "nyolc";
-        //         break;
-        //     }
-        //
-        //     case 9:
-        //     {
-        //         numToText = "kilenc";
-        //         break;
-        //     }
-        // }
-        //
-        // if (String.IsNullOrEmpty(numToText))
-        // {
-        //     Console.ForegroundColor = ConsoleColor.DarkRed;
-        //     Console.WriteLine("A tartományon kívül adtál meg számot!");
-        //
-        //     Console.ResetColor();
-        // }
-        // else
-        // {
-        //     Console.WriteLine($"Az általad megadott szám: {numToText}");
-        // }
-        //
-        // Console.ReadLine();
+        Console.Clear();
+        Console.WriteLine("11. feladat");
+
+        Console.Write("Adj meg egy számot: ");
+        int inputNumber = int.Parse(Console.ReadLine()!);
+        string numToText = string.Empty;
+
+        switch (inputNumber)
+        {
+            case 0:
+            {
+                numToText = "nulla";
+                break;
+            }
+
+            case 1:
+            {
+                numToText = "egy";
+                break;
+            }
+
+            case 2:
+            {
+                numToText = "kettő";
+                break;
+            }
+
+            case 3:
+            {
+                numToText = "három";
+                break;
+            }
+
+            case 4:
+            {
+                numToText = "négy";
+                break;
+            }
+
+            case 5:
+            {
+                numToText = "öt";
+                break;
+            }
+
+            case 6:
+            {
+                numToText = "hat";
+                break;
+            }
+
+            case 7:
+            {
+                numToText = "hét";
+                break;
+            }
+
+            case 8:
+            {
+                numToText = "nyolc";
+                break;
+            }
+
+            case 9:
+            {
+                numToText = "kilenc";
+                break;
+            }
+        }
+
+        if (String.IsNullOrEmpty(numToText))
+        {
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.WriteLine("A tartományon kívül adtál meg számot!");
+
+            Console.ResetColor();
+        }
+        else
+        {
+            Console.WriteLine($"Az általad megadott szám: {numToText}");
+        }
+
+        Console.ReadLine();
 
         #endregion
 
