@@ -39,6 +39,9 @@ public class Team
         return result;
     }
 
+    // todo | refactor
+    // 1. enum és két tömbbel
+    // 2. dictionary-vel
     public bool IsAvailable(Player player)
     {
         bool result = true;
@@ -74,23 +77,31 @@ public class Team
         return result;
     }
 
+    // todo | refactor
+    // ez a megközelítés sokkal hatékonyabb, mert így nem csinálunk fölöslegesen egy for ciklust
     public void Include(Player player)
     {
-        int actualNumberOfPlayers = 0;
+        if (IsFull())
+            return;
 
-        for (int i = 0; i < _players.Length; i++)
-        {
-            Player? tmpPlayer = _players[i];
-            actualNumberOfPlayers = i + 1;
+        _players[_numberOfPlayers] = player;
+        _numberOfPlayers++;
 
-            if (tmpPlayer == null)
-            {
-                _players[i] = player;
-                break;
-            }
-        }
-
-        _numberOfPlayers = actualNumberOfPlayers;
+        // int actualNumberOfPlayers = 0;
+        //
+        // for (int i = 0; i < _players.Length; i++)
+        // {
+        //     Player? tmpPlayer = _players[i];
+        //     actualNumberOfPlayers = i + 1;
+        //
+        //     if (tmpPlayer == null)
+        //     {
+        //         _players[i] = player;
+        //         break;
+        //     }
+        // }
+        //
+        // _numberOfPlayers = actualNumberOfPlayers;
     }
 
     // properties
