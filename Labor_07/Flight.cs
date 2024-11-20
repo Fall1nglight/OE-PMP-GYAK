@@ -25,6 +25,7 @@ public class Flight
         _dest = dest;
         _std = std;
         _delay = 0;
+        UpdateStatus();
     }
 
     // methods
