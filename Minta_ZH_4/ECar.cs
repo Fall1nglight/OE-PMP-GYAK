@@ -22,7 +22,7 @@ public class ECar
         _plateNum = arr[0];
         _model = (TeslaModel)int.Parse(arr[1]);
         _year = int.Parse(arr[2]);
-        _batteryCapacity = Double.Parse(arr[3].Replace('.', ','));
+        _batteryCapacity = double.Parse(arr[3].Replace('.', ','));
         _kms = int.Parse(arr[4]);
         _range = int.Parse(arr[5]);
         _color = arr[6];

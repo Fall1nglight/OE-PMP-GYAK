@@ -56,7 +56,7 @@ public class Flight
     }
 
     // properties
-    public String AllData
+    public string AllData
     {
         get
         {

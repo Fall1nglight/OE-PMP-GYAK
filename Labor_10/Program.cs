@@ -26,7 +26,7 @@ internal class Program
 
         foreach (Survey s in surveys)
         {
-            if (String.Compare(s.Period, choosenPeriod, StringComparison.Ordinal) == 0)
+            if (string.Compare(s.Period, choosenPeriod, StringComparison.Ordinal) == 0)
             {
                 filteredSurvey.Add(s);
             }

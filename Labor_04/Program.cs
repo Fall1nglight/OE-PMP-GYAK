@@ -2,6 +2,9 @@
 
 internal class Program
 {
+    // változók
+    static Random _rand = new Random();
+
     public static void Main(string[] args)
     {
         #region 1. feladat
@@ -33,11 +36,11 @@ internal class Program
         foreach (char c in testInputOne)
         {
             // betűk száma
-            if (Char.IsLetter(c))
+            if (char.IsLetter(c))
                 count[0]++;
 
             // számjegyek száma
-            if (Char.IsDigit(c))
+            if (char.IsDigit(c))
                 count[1]++;
 
             // magánhangzók száma
@@ -70,7 +73,7 @@ internal class Program
         Array.Reverse(rvArr);
         string reversedInputTwo = new string(rvArr);
 
-        bool isPalindrome = String.CompareOrdinal(testInputTwo, reversedInputTwo) == 0;
+        bool isPalindrome = string.CompareOrdinal(testInputTwo, reversedInputTwo) == 0;
 
         Console.WriteLine(
             isPalindrome ? "A szöveg palindróm volt." : "A szöveg nem volt palindróm."
@@ -94,7 +97,7 @@ internal class Program
 
         foreach (string plate in cases)
         {
-            string tmp = plate.Replace(" ", String.Empty).Replace("-", String.Empty);
+            string tmp = plate.Replace(" ", string.Empty).Replace("-", string.Empty);
             string letters = tmp.Substring(0, 4).Insert(2, " ").ToUpper();
             string numbers = tmp.Substring(4, 3);
             string formattedPlate = $"{letters}-{numbers}";
@@ -112,20 +115,17 @@ internal class Program
 
         static string GeneratePlate()
         {
-            Random rand = new Random();
             string result = string.Empty;
 
             for (int i = 0; i < 4; i++)
-                result += Char.ToUpper((char)rand.Next('a', 'z' + 1));
+                result += char.ToUpper((char)_rand.Next('a', 'z' + 1));
 
-            result += rand.Next(100, 1000);
+            result += _rand.Next(100, 1000);
 
             return result.Insert(2, " ").Insert(5, "-");
         }
 
-        for (int i = 0; i < 50; i++)
-            Console.WriteLine(GeneratePlate());
-
+        Console.WriteLine(GeneratePlate());
         Console.ReadLine();
 
         #endregion
@@ -140,6 +140,108 @@ internal class Program
 
         Console.Clear();
         Console.WriteLine("6. feladat");
+
+        Console.WriteLine($"Véletlenszerűen generált Neptunk-kód: {GenerateNeptunKey()}");
+
+        static string GenerateNeptunKey()
+        {
+            string result = string.Empty;
+
+            while (result.Length != 6)
+            {
+                result += GenerateCharOrDigit();
+
+                if (!char.IsLetter(result[0]))
+                    result = string.Empty;
+            }
+
+            return result.ToUpper();
+        }
+
+        // 0-9 és a-z-ig ad vissza karaktert
+        static char GenerateCharOrDigit()
+        {
+            if (_rand.Next(2) == 0)
+                return (char)_rand.Next('0', '9' + 1);
+
+            return (char)_rand.Next('a', 'z' + 1);
+        }
+
+        Console.ReadLine();
+
+        #endregion
+
+        #region 7. feladat
+        Console.Clear();
+        Console.WriteLine("7. feladat");
+
+        string spongeCaseInput = "Well, a Big Mac's a Big Mac, but they call it le Big-Mac.";
+
+        Console.WriteLine(spongeCaseInput);
+        Console.WriteLine(FormatToSpongeCase(spongeCaseInput));
+
+        static string FormatToSpongeCase(string input)
+        {
+            string result = string.Empty;
+
+            for (int i = 0; i < input.Length; i++)
+            {
+                result += ((i + 1) % 2 != 0) ? char.ToUpper(input[i]) : char.ToLower(input[i]);
+            }
+
+            return result;
+        }
+
+        Console.ReadLine();
+
+        #endregion
+
+        #region 8. feladat
+        Console.Clear();
+        Console.WriteLine("8. feladat");
+
+        string strToMatrixInput =
+            "Vincent;Vega;Vince\nMarsellus;Wallace;Big Man\nWinston;Wolf;The Wolf";
+
+        string[,] strToMatrixOutput = StrToMatrix(strToMatrixInput);
+
+        for (var i = 0; i < strToMatrixOutput.GetLength(0); i++)
+        {
+            for (var j = 0; j < strToMatrixOutput.GetLength(1); j++)
+            {
+                Console.Write(strToMatrixOutput[i, j] + " ");
+            }
+
+            Console.WriteLine();
+        }
+
+        static string[,] StrToMatrix(string input)
+        {
+            int numOfRows = 0;
+            string[] lines = input.Split('\n');
+
+            for (int i = 0; i < lines.Length; i++)
+            {
+                string[] rows = lines[i].Split(';');
+
+                if (rows.Length > numOfRows)
+                    numOfRows = rows.Length;
+            }
+
+            string[,] result = new string[lines.Length, numOfRows];
+
+            for (int i = 0; i < lines.Length; i++)
+            {
+                string[] rows = lines[i].Split(';');
+
+                for (int j = 0; j < rows.Length; j++)
+                {
+                    result[i, j] = rows[j];
+                }
+            }
+
+            return result;
+        }
 
         Console.ReadLine();
 

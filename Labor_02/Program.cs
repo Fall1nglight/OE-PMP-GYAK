@@ -28,7 +28,7 @@ internal class Program
         string inputPwd = string.Empty;
         int tryCounter = 0;
 
-        while (String.Compare(pwd, inputPwd, StringComparison.Ordinal) != 0)
+        while (string.Compare(pwd, inputPwd, StringComparison.Ordinal) != 0)
         {
             tryCounter++;
 
@@ -169,7 +169,7 @@ internal class Program
         int inputFactorialBase = int.Parse(Console.ReadLine()!);
 
         int factorial = 1;
-        string factorialText = String.Empty;
+        string factorialText = string.Empty;
 
         for (int i = inputFactorialBase; i >= 1; i--)
         {
@@ -275,7 +275,7 @@ internal class Program
 
         static string ConvertIntToBinary(uint input)
         {
-            string result = String.Empty;
+            string result = string.Empty;
             uint value = input;
 
             while (value != 0)
@@ -313,7 +313,7 @@ internal class Program
             Console.WriteLine($"Jelenlegi tét: {w}");
         }
 
-        static Tuple<String, int> GetWinAmount(int w)
+        static Tuple<string, int> GetWinAmount(int w)
         {
             Random rand = new Random();
             int numF = rand.Next(0, 10);
@@ -321,7 +321,7 @@ internal class Program
             int numT = rand.Next(0, 10);
             string rolledNumbers = $"Pörgetett számok: {numF}, {numS}, {numT}";
 
-            Tuple<String, int> result = new Tuple<string, int>(
+            Tuple<string, int> result = new Tuple<string, int>(
                 $"{rolledNumbers}\nEgy szám se egyezik meg!\nVesztettél {w} kreditet!",
                 1
             );

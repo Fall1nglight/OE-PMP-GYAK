@@ -82,7 +82,7 @@ internal class Program
         List<string> words2 = new List<string>();
         string inputWord2 = string.Empty;
 
-        while (String.CompareOrdinal(inputWord2, "STOP") != 0)
+        while (string.CompareOrdinal(inputWord2, "STOP") != 0)
         {
             Console.Write("Adj hozzá egy szót a listához: ");
             inputWord2 = Console.ReadLine()!;
@@ -118,7 +118,7 @@ internal class Program
             Console.Write("Név: ");
             inputName = Console.ReadLine()!;
 
-            if (String.IsNullOrEmpty(inputName))
+            if (string.IsNullOrEmpty(inputName))
                 break;
 
             Console.Write("Életkor: ");
@@ -132,7 +132,7 @@ internal class Program
             names.Add(inputName);
             ages.Add(inputAge);
             experiences.Add(experience);
-        } while (!String.IsNullOrEmpty(inputName));
+        } while (!string.IsNullOrEmpty(inputName));
 
         // Mi az átlagéletkor a teljes adathalmazban?
         int sumAge = 0;

@@ -99,7 +99,7 @@ internal class Program
         Console.Write("Add meg a jelszavad megint: ");
         string inputSecondPwd = Console.ReadLine()!;
 
-        if (String.Compare(inputFirstPwd, inputSecondPwd, StringComparison.Ordinal) == 0)
+        if (string.Compare(inputFirstPwd, inputSecondPwd, StringComparison.Ordinal) == 0)
         {
             Console.ForegroundColor = ConsoleColor.DarkGreen;
             Console.WriteLine("A jelszavak megegyeznek!");
@@ -271,7 +271,7 @@ internal class Program
             }
         }
 
-        if (String.IsNullOrEmpty(numToText))
+        if (string.IsNullOrEmpty(numToText))
         {
             Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.WriteLine("A tartományon kívül adtál meg számot!");

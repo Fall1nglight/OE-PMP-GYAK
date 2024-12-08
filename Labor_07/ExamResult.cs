@@ -27,7 +27,7 @@ public class ExamResult
     // methods
     private bool IsNeptunKeyValid(string key)
     {
-        return Char.IsDigit(key[0]) && key.Length == 6;
+        return char.IsDigit(key[0]) && key.Length == 6;
     }
 
     private string GenerateKey()
@@ -37,7 +37,7 @@ public class ExamResult
         while (result.Length != 6)
         {
             result += GenerateRandChar();
-            if (!Char.IsDigit(result[0]))
+            if (!char.IsDigit(result[0]))
                 result = string.Empty;
         }
 
