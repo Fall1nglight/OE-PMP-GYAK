@@ -16,13 +16,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labor_07", "Labor_07\Labor_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labor_04", "Labor_04\Labor_04.csproj", "{088C29A5-BBF9-4055-9E0D-35844235EFBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZH_2", "ZH_2\ZH_2.csproj", "{3ADDF52E-A333-4133-B56D-A493D80ADE4B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minta_ZH_2", "Minta_ZH_2\Minta_ZH_2.csproj", "{3ADDF52E-A333-4133-B56D-A493D80ADE4B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minta_ZH_3", "Minta_ZH_3\Minta_ZH_3.csproj", "{5920D6DE-AB88-48EF-8D00-3DF96E052AE9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minta_ZH_4", "Minta_ZH_4\Minta_ZH_4.csproj", "{C2CA2C01-3B09-49C8-AF1F-250FF9CD6C21}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labor_05", "Labor_05\Labor_05.csproj", "{982E1707-7578-4C2F-9926-CA7930C7DBC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgramozasiTetelek", "ProgramozasiTetelek\ProgramozasiTetelek.csproj", "{94B05722-C5F9-4D8D-B0C5-20369CB8B5D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -78,5 +80,9 @@ Global
 		{982E1707-7578-4C2F-9926-CA7930C7DBC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{982E1707-7578-4C2F-9926-CA7930C7DBC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{982E1707-7578-4C2F-9926-CA7930C7DBC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94B05722-C5F9-4D8D-B0C5-20369CB8B5D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94B05722-C5F9-4D8D-B0C5-20369CB8B5D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94B05722-C5F9-4D8D-B0C5-20369CB8B5D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94B05722-C5F9-4D8D-B0C5-20369CB8B5D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

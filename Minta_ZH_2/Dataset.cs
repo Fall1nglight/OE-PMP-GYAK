@@ -1,7 +1,7 @@
 ﻿using System.Text;
-using ZH_2.Enums;
+using Minta_ZH_2.Enums;
 
-namespace ZH_2;
+namespace Minta_ZH_2;
 
 public class Dataset
 {
