@@ -8,9 +8,11 @@ public class Sorozatszamitas
         ElsoPelda();
         MasodikPelda();
         HarmadikPelda();
+
+        Console.WriteLine();
     }
 
-    // 1. példa - számok összeadása
+    // 1. példa - számok összeadása (2.1)
     private void ElsoPelda()
     {
         int[] x = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };

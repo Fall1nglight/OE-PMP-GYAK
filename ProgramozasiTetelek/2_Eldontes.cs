@@ -8,9 +8,11 @@ public class Eldontes
         ElsoPelda();
         MasodikPelda();
         HarmadikPelda();
+
+        Console.WriteLine();
     }
 
-    // 1. példa
+    // 1. példa - Eldontes (2.2)
     private void ElsoPelda()
     {
         int[] x = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
@@ -24,7 +26,7 @@ public class Eldontes
         Console.WriteLine($"Van páros szám a tömbben? {van}");
     }
 
-    // 2. példa - EldontesMinden
+    // 2. példa - EldontesMinden (2.3)
     private void MasodikPelda()
     {
         int[] x = { 2, 2, 2, 2, 2, 6, 2, 8, 2, 10 };
@@ -38,7 +40,7 @@ public class Eldontes
         Console.WriteLine($"Össze szám páros a tömbben? {van}");
     }
 
-    // 3. példa - Rendezett-e
+    // 3. példa - Rendezett-e (2.5)
     private void HarmadikPelda()
     {
         int[] x = { 1, 3, 6, 15, 50, 51 };
