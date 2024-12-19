@@ -5,6 +5,7 @@ public class Kivalogatas
     public void RunExample()
     {
         Console.WriteLine("7. tétel - Kiválogatás");
+
         ElsoPelda();
 
         Console.WriteLine('\n');

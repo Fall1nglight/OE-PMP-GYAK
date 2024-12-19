@@ -5,11 +5,13 @@ public class Szetvalogatas
     public void RunExample()
     {
         Console.WriteLine("10. tétel - Szétválogatás");
+
         ElsoPelda();
 
         Console.WriteLine();
     }
 
+    // (2.15)
     private void ElsoPelda()
     {
         int[] x = { 4, 1, 3, 8, 2, 7 };

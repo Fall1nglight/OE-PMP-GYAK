@@ -13,6 +13,7 @@ public class KivalogatasHelybenElemekMegtartasaval
         Console.WriteLine();
     }
 
+    // (2.14)
     private void ElsoPelda()
     {
         int[] x = { 4, 1, 3, 8, 2, 7 };

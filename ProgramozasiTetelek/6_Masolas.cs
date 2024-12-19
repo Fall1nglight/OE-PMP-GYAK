@@ -5,6 +5,7 @@ public class Masolas
     public void RunExample()
     {
         Console.WriteLine("6. tétel - Másolás");
+
         ElsoPelda();
 
         Console.WriteLine();

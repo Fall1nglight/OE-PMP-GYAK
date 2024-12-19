@@ -5,6 +5,7 @@ public class Maximumkivalasztas
     public void RunExample()
     {
         Console.WriteLine("5. tétel - Maximumkiválasztás");
+
         ElsoPelda();
 
         Console.WriteLine();

@@ -5,6 +5,7 @@ public class LinearisKereses
     public void RunExample()
     {
         Console.WriteLine("3. tétel - Lineáris keresés");
+
         ElsoPelda();
         MasodikPelda();
 

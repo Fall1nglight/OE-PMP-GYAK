@@ -5,6 +5,7 @@ public class Sorozatszamitas
     public void RunExample()
     {
         Console.WriteLine("1. tétel - Sorozatszámítás");
+
         ElsoPelda();
         MasodikPelda();
         HarmadikPelda();

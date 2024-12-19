@@ -5,6 +5,7 @@ public class Megszamlalas
     public void RunExample()
     {
         Console.WriteLine("4. tétel - Megszámlálás");
+
         ElsoPelda();
 
         Console.WriteLine();

@@ -5,6 +5,7 @@ public class KivalogatasHelyben
     public void RunExample()
     {
         Console.WriteLine("8. tétel - Kiválogatás az eredeti tömbbe (helyben)");
+
         ElsoPelda();
 
         Console.WriteLine('\n');

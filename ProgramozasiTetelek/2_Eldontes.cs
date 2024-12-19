@@ -5,6 +5,7 @@ public class Eldontes
     public void RunExample()
     {
         Console.WriteLine("2. tétel - Eldöntés");
+
         ElsoPelda();
         MasodikPelda();
         HarmadikPelda();
